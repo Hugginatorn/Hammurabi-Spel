@@ -1,0 +1,161 @@
+<!-- Hugo Söderström (20020909-8854), Axel Alstreus (2004) -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hammurabi</title>
+    <link rel="stylesheet" type="text/css" href="hammurabi.css">
+    <script type="text/javascript" src="hammurabi.js">
+    </script>
+  </head>
+  <link rel="stylesheet" 
+  href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
+  <body onload="gameStart();">
+    <h1 class="font-effect-fire">O Great Hammurabi!</h1>
+
+    <h2 id="year">TEXT-SOM-BYTS-UT-AV-JS-FILEN</h2>
+
+    <div class="main">
+      <ul id="people">
+        <li id="starved">TEXT-SOM-BYTS-UT-AV-JS-FILEN</li>
+        <li id="newcomers">TEXT-SOM-BYTS-UT-AV-JS-FILEN</li>
+        <li id="population">TEXT-SOM-BYTS-UT-AV-JS-FILEN</li>
+      </ul>
+      
+        <div class="thumb-me", id="slidersRuta">
+          <fieldset class="fieldset">
+            <legend class="textslider">
+              Köp/Sälj Tunnland:
+              <span id="outputAcrestosellbuy"></span>
+            </legend>
+            <div class="sliderBox">
+              <input type="button" value="-" class="knapp"
+                id="minusbuttonAcrestosellbuy"
+                onclick="onChangeAcres('minusbuttonAcrestosellbuy');">
+              <input class="landSlider" type="range" id="sliderAcrestosellbuy"
+                onchange="onChangeAcres('sliderAcrestosellbuy');">
+              <input type="button" value="+" class="knapp"
+                id="plusbuttonAcrestosellbuy"
+                onclick="onChangeAcres('plusbuttonAcrestosellbuy');">
+            </div>
+          </fieldset>
+        
+          <fieldset class="fieldset">
+            <legend class="textslider">
+              Mat till folket:
+              <span id="outputFeedpeople"></span>
+            </legend>
+            <div class="sliderBox">
+              <input type="button" value="-" class="knapp" 
+                id="minusbuttonFeedpeople"
+                onclick="onChangeFeeding('minusbuttonFeedpeople');">
+              <input type="range" id="sliderFeedpeople"
+                onchange="onChangeFeeding('sliderFeedpeople');">
+              <input type="button" value="+" class="knapp"
+                id="plusbuttonFeedpeople"
+                onclick="onChangeFeeding('plusbuttonFeedpeople');">
+            </div>
+          </fieldset>
+        
+          <fieldset class="fieldset">
+            <legend class="textslider">
+              Så med utsäde:
+              <span id="outputPlantwithseed"></span>
+            </legend>
+            <div class="sliderBox">
+            <input type="button" class="knapp" value="-" 
+              id="minusbuttonPlantwithseed" 
+              onclick="onChangePlanting('minusbuttonPlantwithseed');">
+            <input type="range" id="sliderPlantwithseed"
+              onchange="onChangePlanting('sliderPlantwithseed');">
+            <input type="button" value="+" class="knapp" 
+              id="plusbuttonPlantwithseed"
+              onclick="onChangePlanting('plusbuttonPlantwithseed');">
+            </div>
+          </fieldset>
+        </div>
+      
+      <ul id="economy">
+        <li id="acres">TEXT-SOM-BYTS-UT-AV-JS-FILEN</li>
+        <li id="bushels">TEXT-SOM-BYTS-UT-AV-JS-FILEN</li>
+        <li id="harvest">TEXT-SOM-BYTS-UT-AV-JS-FILEN</li>
+        <li id="rats">TEXT-SOM-BYTS-UT-AV-JS-FILEN</li>
+        <li id="price">TEXT-SOM-BYTS-UT-AV-JS-FILEN</li>
+      </ul>
+    </div>
+    <div id="bakgrund">
+      <div id="textruta">
+        <h1 class="font-effect-fire">Spelets historia</h1>
+        Hammurabi är ett av de första dataspelen och skapades igenom 
+        programmeringsspråket FOCAL av Doug Dyment. Från början hade 
+        spelet namnet The Sumer Game och var inspererat av en textbaserad 
+        ekonomisk simulation för barn vid namn The Sumerian Game(1966). Spelet 
+        utvecklades sedan om med språket DEC BASICS och byte namn till 
+        Hammurabi(1973), denna utvecklade verision blev mycket populär 
+        och har varit en inperation till många stratrgispel och kallas 
+        även för strategispelens förförälder. Den utvecklade verisionen 
+        fick sitt namn från den Babylonska kungen Hammurabi.
+        <a href="https://en.wikipedia.org/wiki/Hamurabi_(video_game)"
+        target="_blank">Källa för historia</a>
+
+        <h1 class="font-effect-fire">Hammurabi</h1>
+        Kung Hammurabi(1810 f.Kr. - 1750 f.Kr.) var den tredje amoritiska 
+        kungen över det Gammla babyloniska riket och styrde Babylonien i 
+        42 år från 1792 f.Kr. till hans död(1750 f.Kr.). <br> Hammurabi kom 
+        till makten som efterträdare för sin fader Sin-Muballit efter att 
+        han dog. <br> Under sin tid som kånung erövrade han städer som Larsa, 
+        Eshunna och Mari, han avsatt dessutom Ishme-Dagan den förste som var 
+        kung över Assyrien som fick Babylonien att härska över nästan hela 
+        Mesopotamien. <br> Hammurabi var mest känd för att han införde 
+        "Hammurabis kod" som sägs att han fick från "Guden av rättvisa" 
+        Shamash.<br> Hammurabis kod var en av de första med att anta att 
+        den dömde var oskylldig till dess att man bevisats vara skyldig, det 
+        var också den första babylonska koden som fokuserade på at straffa 
+        gärningsmannen istället för att kompensera offret. <br> Hammurabis 
+        kod liknade mosaiklagen från toran. <br> Hammurabi var sedd av många 
+        som en gud och även efter hans död så har han sätts som en ideal 
+        härskare och är ett stort namn inom historien av lagarna.
+        <a href="https://en.wikipedia.org/wiki/Hammurabi"
+        target="_blank">Källa för hammurabi</a>
+      </div>
+    </div>
+
+    <div class="footer">
+      <button type="button" onclick="gameStart();">
+        Omstart
+      </button>
+ 
+      <button type="button" id="emph" onclick="finishTurn();">
+        Detta är min order!
+      </button>
+
+      <button type="button" id="popup" onclick="knappFunktion();">Hjälp
+        <span class="popuptext" id="andraPopup"><div class="regler">
+          <h1 class="font-effect-fire">Regler</h1>
+          <ol id="punktlista">
+            <li>Spelet är uppdelat i 10 år där varje år är en spelrond.</li>
+            <li>Varje år ska du besluta om hur mycket mat som ska fördelas, 
+              hur mycket land som ska köpas/säljas och hur mycket frön som 
+              ska planteras till nästa år.</li>
+            <li>Varje person behöver 20 skäppor spannmål för att överleva 
+              året och kan plantera frön på 10 tunnland av mark var.</li>
+            <li>Varje tunnland behöver skäppa var av frön för att kunna 
+              plantera.</li>
+            <li>Priset på varje tunnland av mark varierar mellan 17 och 
+              26 skäppor.</li>
+            <li>Om omständigheterna i landet blir tillräckligt dåligt så 
+              kommer folket att avskaffa dig som kung.</li>
+            <li>Ifall du klarar dig till det elfte året så kommer bli känd 
+              som en hjälte och jämnförd med de allra mäktigaste kungarna 
+              i historien.</li>
+        </div></span>
+        <script>
+          function knappFunktion() {
+            var popup = document.getElementById("andraPopup");
+            popup.classList.toggle("show");
+          }
+          </script>
+      </button></div>
+  </body>
+</html>

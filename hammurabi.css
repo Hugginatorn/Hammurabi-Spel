@@ -1,0 +1,254 @@
+/* Hugo Söderström (20020909-8854), Axel Alstreus*/
+
+h1 {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  text-decoration: bold;
+  text-align: center;
+  font-family: "Sofia", sans-serif;
+  font-size: 40px;
+}
+
+body{
+  background-image: url(https://png.pngtree.com/background/20230412/original/pngtree-building-cartoon-desert-castle-background-picture-image_2401751.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#year {
+  text-align: center;
+  color: rgb(245, 233, 211);
+  font-family: "Sofia", sans-serif;
+  font-size: 30px;
+  letter-spacing: .15em;
+  text-shadow: 2px -2px 1px rgb(255, 111, 0);
+}
+
+#people {
+  display: block;
+  text-align: center;
+  list-style: none;
+  background: url(https://cdn.dribbble.com/userupload/11960434/file/original-5e457819793fffbea4a953930d4270e8.jpg?resize=1504x659);
+  background-position: bottom center;
+  font-family: "Sofia", sans-serif;
+  border: 10px solid gray;
+  border-radius: 25px;
+}
+
+#people li {
+  margin-bottom: 1px;
+  margin-top: 7px;
+  color: rgb(245, 233, 211);
+  text-shadow: 2px -2px 1px rgb(255, 111, 0);
+  font-size: 30px;
+}
+
+#economy {
+  display: block;
+  text-align: center;
+  border: black 1px solid;
+  list-style: none;
+  background: url(https://cdn.dribbble.com/userupload/11960434/file/original-5e457819793fffbea4a953930d4270e8.jpg?resize=1504x659);
+  background-position: bottom center;
+  font-family: "Sofia", sans-serif;
+  border: 10px solid gray;
+  border-radius: 25px;
+}
+
+#economy li {
+  margin-bottom: 1px;
+  margin-top: 7px;
+  color: rgb(245, 233, 211);
+  text-shadow: 2px -2px 1px rgb(255, 111, 0);
+  font-size: 30px;
+}
+
+#slidersRuta {
+  background-image: url(https://www.publicdomainpictures.net/pictures/470000/nahled/altes-papier-pergament-hintergrund-1661429105Q92.jpg);
+  background-size: auto;
+  background-position: center;
+  width: 280px;
+  border: 10px solid gray;
+  margin:auto;
+  font-family: "Sofia", sans-serif;
+  font-size: 16px;
+  border-radius: 25px;
+}
+
+#historia{
+  display: block;
+  height: 800px;
+  background-color: gray;
+  border-radius: 25px;
+  border: 10px solid gray;
+
+}
+
+#textruta{
+  text-align: center;
+  color: rgb(245, 233, 211);
+  font-family: "Sofia", sans-serif;
+  font-size: 30px;
+  letter-spacing: .15em;
+  text-shadow: 2px -2px 1px rgb(255, 111, 0);
+  opacity: 1;
+}
+
+#bakgrund{
+  background: rgba(128,128,128,0.7);
+  display: block;
+  height: 1500px;
+  margin-top: 300px;
+  border-radius: 25px;
+  border: 10px solid gray;
+}
+
+.kolumn{
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+.fieldset {
+  border-style: none;
+}
+
+.footer {
+  padding-bottom: 10px;
+  text-align: center;
+  position: sticky;
+  bottom: 0px;
+  background: url(https://cdn.dribbble.com/userupload/11960434/file/original-5e457819793fffbea4a953930d4270e8.jpg?resize=1504x659);
+  background-position: bottom center;
+  border-radius: 25px;
+  border: 10px solid gray;
+  width: 40%;
+  left: 29.37%;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  width: 100%;
+}
+
+button {
+  margin: 10px 15px 0 0;
+  padding: 10px 15px;
+  font-family: "Sofia", sans-serif;
+  font-size: 15px;
+  color: rgb(245, 233, 211);
+  text-shadow: 2px -2px 1px rgb(255, 111, 0);
+  background-image: linear-gradient(#ba5725,#d18a54);
+  transition: transform 0.2s, background-color 0.3s ease-in-out;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.thumb-me{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.knapp{
+  margin: 5px 5px 0 0;
+  padding: 0.1px 8px;
+  font-family: "Sofia", sans-serif;
+  font-size: 15px;
+  color: rgb(245, 233, 211);
+  text-shadow: 2px -2px 1px rgb(255, 111, 0);
+  background-image: linear-gradient(#ba5725,#d18a54);
+  transition: transform 0.2s, background-color 0.3s ease-in-out;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.textslider{
+  text-align: center;
+  font-family: "Sofia", sans-serif;
+  font-size: 15px;
+  color: rgb(245, 233, 211);
+  text-shadow: 2px -2px 1px rgb(255, 111, 0);
+}
+
+button:hover, .knapp:hover{
+  transform: translateY(-2px); 
+  box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.4); 
+}
+
+input[type="range"] {
+  appearance: none;
+  width: 75%;
+  height: 10px;
+  opacity: 0.7;
+  background: #a65b5b;
+  outline: none;
+  border-radius: 5px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  background: linear-gradient(#ba5725,#d18a54);
+  border-radius: 9px;
+  border: 2px solid black;
+}
+
+.sliderBox{
+  display: flex;
+  align-items: center;
+}
+
+#popup {
+  position: relative;
+  cursor: pointer;
+}
+
+#popup .popuptext {
+  visibility: hidden;
+  width: 500px;
+  background-image: url(https://www.publicdomainpictures.net/pictures/470000/nahled/altes-papier-pergament-hintergrund-1661429105Q92.jpg);
+  font-family: "Sofia", sans-serif;
+  text-shadow: 2px -2px 1px rgb(255, 111, 0);
+  font-size: 15px;
+  text-align: center;
+  border-radius: 25px;
+  padding: 8px 0;
+  padding-right: 10px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -150px;
+  border: 10px solid gray;
+}
+
+#popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+}
+
+#popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+.regler{
+  color: rgb(245, 233, 211);
+}
